@@ -13,13 +13,13 @@ CORS(app)
 @app.route('/records', methods=['get'])
 @cross_origin()
 def GetRecords():
-    return app.database.getRecords()
+    return getRecords()
 
 
 @app.route('/record/new', methods=['POST'])
 @cross_origin()
 def NewRecord():
-    return app.database.newRecord()
+    return newRecord()
 
 
 if __name__ == "__main__":
