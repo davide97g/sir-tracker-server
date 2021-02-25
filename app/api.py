@@ -1,7 +1,7 @@
 # api.py
 import flask
 from flask_cors import CORS, cross_origin
-from database import getRecords, newRecord
+from app.database import getRecords, newRecord
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
