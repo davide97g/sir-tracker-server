@@ -46,5 +46,10 @@ def getRecords():
 
 
 if __name__ == "__main__":
+    # record = {
+    #     "date": "26/02/2021",
+    #     "weight": 76.2
+    # }
+    # print(newRecord(record))
     for r in getRecords()['records']:
         print(r)
